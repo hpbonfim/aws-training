@@ -1,1 +1,1 @@
-<iframe width="800" height="450" src="https://whimsical.com/embed/7f9DEg3ztbbjiZ2Qk9TmWw"/>
+https://whimsical.com/embed/7f9DEg3ztbbjiZ2Qk9TmWw
