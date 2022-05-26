@@ -96,7 +96,7 @@ function AddEmployee($connection, $name, $address)
 
   $query = "INSERT INTO EMPLOYEES (NAME, ADDRESS) VALUES ('$n', '$a');";
 
-  if (!mysqli_query($connection, $query)) echo ("<p>Error adding employee data.</p>");
+  if (!mysqli_query($connection, $query)) echo ("<p>Error adding employee data.</p> <br/> <b>Error description:</b> " . mysqli_error($connection));
 }
 
 /* Check whether the table exists and, if not, create it. */
@@ -109,7 +109,7 @@ function VerifyEmployeesTable($connection, $dbName)
          ADDRESS VARCHAR(90)
        )";
 
-    if (!mysqli_query($connection, $query)) echo ("<p>Error creating table.</p>");
+    if (!mysqli_query($connection, $query)) echo ("<p>Error creating table.</p> <br/> <b>Error description:</b> " . mysqli_error($connection));
   }
 }
 
