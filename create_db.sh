@@ -1,7 +1,6 @@
 #!/bin/bash
 echo "installing dependencies"
-yum install -y mariadb-server
-systemctl start mariadb
+sudo yum install -y mariadb-server && sudo systemctl start mariadb
 echo "dependencies done!"
 
 echo `\ncreating database`
@@ -16,7 +15,5 @@ echo `database created`
 mysql -u admin -e "SHOW DATABASES;"
 
 echo `start cleaning`
-systemctl stop mariadb
-yum remove -y mariadb-server
-
+sudo systemctl stop mariadb && yum remove -y mariadb-server
 echo `all cleaned up!`
