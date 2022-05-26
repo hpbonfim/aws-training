@@ -1,9 +1,4 @@
-<?php
-define('DB_SERVER', 'type-a1-3.cctrdcerspq6.sa-east-1.rds.amazonaws.com');
-define('DB_USERNAME', 'admin');
-define('DB_PASSWORD', 'mypassword');
-define('DB_DATABASE', 'cadastro');
-?>
+<?php include "../cadastro/dbinfo.cadastro"; ?>
 <html>
 
 <body>
