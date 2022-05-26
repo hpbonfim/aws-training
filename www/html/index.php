@@ -34,7 +34,7 @@ define('DB_DATABASE', 'cadastro');
     <table border="0">
       <tr>
         <td>NAME</td>
-        <td>E-MAIL</td>
+        <td>ADDRESS</td>
       </tr>
       <tr>
         <td>
@@ -55,7 +55,7 @@ define('DB_DATABASE', 'cadastro');
     <tr>
       <td>ID</td>
       <td>NAME</td>
-      <td>E-MAIL</td>
+      <td>ADDRESS</td>
     </tr>
 
     <?php
