@@ -2,8 +2,8 @@
 echo "installing dependencies"
 sudo yum install -y mariadb-server && sudo systemctl start mariadb
 echo "dependencies done!"
-
-echo `\ncreating database`
+echo ""
+echo "creating database"
 # create database
 DATABASE_NAME="cadastro"
 # database passwd (SAME AS AWS RDS)
