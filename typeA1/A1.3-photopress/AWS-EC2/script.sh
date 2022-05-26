@@ -11,9 +11,9 @@
 #Atualizando os pacotes
 yum update -y
 #Configurando os repositórios
-amazon-linux-extras install -y php7.2 git
-#Instalando o apache e o mysql
-yum install -y httpd
+amazon-linux-extras install -y php7.2
+#Instalando o apache
+yum install -y httpd git
 #inicialização automática
 systemctl start httpd
 systemctl enable httpd
