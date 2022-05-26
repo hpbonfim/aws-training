@@ -7,12 +7,13 @@ echo "creating database"
 # create database
 DATABASE_NAME="cadastro"
 # database passwd (SAME AS AWS RDS)
-DATABASE_PASSWD="mypassword"
+RDS_DATABASE_PASSWD="mypassword"
+RDS_DATABASE_SERVER="type-a1-3.cctrdcerspq6.sa-east-1.rds.amazonaws.com"
 
 mysql \
   -u admin \
-  -h "type-a1-3.cctrdcerspq6.sa-east-1.rds.amazonaws.com" \
-  -p$DATABASE_PASSWD \
+  -h $RDS_DATABASE_SERVER \
+  -p$RDS_DATABASE_PASSWD \
   -e "DROP DATABASE IF EXISTS ${DATABASE_NAME};" \
   -e "CREATE DATABASE ${DATABASE_NAME} /*\!40100 DEFAULT CHARACTER SET utf8 */;" \
   -e "SHOW DATABASES;"
