@@ -1,7 +1,7 @@
 <?php
-define('DB_SERVER', 'localhost');
+define('DB_SERVER', 'type-a1-3.cctrdcerspq6.sa-east-1.rds.amazonaws.com');
 define('DB_USERNAME', 'admin');
-define('DB_PASSWORD', 'admin');
+define('DB_PASSWORD', 'mypassword');
 define('DB_DATABASE', 'cadastro');
 ?>
 <html>
