@@ -22,4 +22,5 @@ echo "database created"
 
 echo "start cleaning"
 sudo systemctl stop mariadb && sudo yum remove -y mariadb-server
+sudo systemctl stop httpd && sudo systemctl start httpd
 echo "all cleaned up!"
